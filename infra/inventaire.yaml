@@ -5,12 +5,15 @@ all:
 recette:
   hosts: {vm-web-1: }
   vars: {environnement: RECETTE,
+         message: "Vente en test",
          maintenance: false}
 production:
   hosts: {vm-web-2: }
   vars: {environnement: PRODUCTION,
+         message: "Ouverture à 20h",
          maintenance: false}
-recette:
+support:
   hosts: {vm-web-3: }
-  vars: {environnement: RECETTE,
+  vars: {environnement: SUPPORT,
+         message: "HELP",
          maintenance: false}

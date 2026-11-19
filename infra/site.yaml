@@ -4,6 +4,6 @@
       ansible.builtin.copy:
         dest: /srv/index.html
         content: >-
-          <h1>{{ environnement }}</h1>
+          <h1>{{ environnement }} {{ message }}</h1>
           {{ 'Maintenance en cours'
              if maintenance else '' }}
