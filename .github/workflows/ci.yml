@@ -13,6 +13,6 @@ jobs:
         with: {python-version: "3.12"}
       - run: pip install -r requirements.txt
       - run: pytest
-      - run: 'test -n "$PAIEMENT_CLE" && echo "Clé reçue : $PAIEMENT_CLE"
+      - run: 'test -n "$PAIEMENT_CLE" && echo "Clé reçue : $PAIEMENT_CLE"'
         env:
         PAIEMENT_CLE: ${{ secrets.PAIEMENT_CLE }}
