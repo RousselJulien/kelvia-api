@@ -15,4 +15,4 @@ jobs:
       - run: pytest
       - run: 'test -n "$PAIEMENT_CLE" && echo "Clé reçue : $PAIEMENT_CLE"'
         env:
-        PAIEMENT_CLE: ${{ secrets.PAIEMENT_CLE }}
+          PAIEMENT_CLE: ${{ secrets.PAIEMENT_CLE }}
